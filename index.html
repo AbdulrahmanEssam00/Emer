@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <title>Abdo Essam</title>
+
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">Emergency</a>
+    <nav class="navigation">
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="main">
+    <div>
+      <h2>Hello<br /><span>Change Your Life</span></h2>
+      <h3>With one click , Make your life safe</h3>
+      <a href="Projects" class="main_btn">Click Here</a>
+      <div class="social_icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="Projects" id="Projects">
+    <h class="title">Projects</h>
+    <div class="content">
+
+      <div class="card">
+        <div class="Project-image">
+          <img src="https://i.pinimg.com/564x/f8/0f/73/f80f735e8640e4ffc8a3a13871d009d1.jpg" />
+        </div>
+        <div class="Project-info">
+          <a class="project-title" href="">
+            Diabetes
+          </a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="Project-image">
+          <img src="https://i.pinimg.com/564x/d7/f5/3c/d7f53c0d9b7affb19ed567b2d5517c5b.jpg" />
+        </div>
+        <div class="Project-info">
+          <a class="project-title" href="">
+            Heart failure
+          </a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="Project-image">
+          <img src="https://i.pinimg.com/564x/78/bf/d9/78bfd9fdbb9827acfc4f53c2bf83e054.jpg" />
+        </div>
+        <div class="Project-info">
+          <a class="project-title"
+            href="https://altibbi.com/%D9%85%D8%B5%D8%B7%D9%84%D8%AD%D8%A7%D8%AA-%D8%B7%D8%A8%D9%8A%D8%A9/%D8%A7%D9%85%D8%B1%D8%A7%D8%B6-%D8%A7%D9%84%D8%AC%D9%87%D8%A7%D8%B2-%D8%A7%D9%84%D9%87%D8%B6%D9%85%D9%8A/%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%85%D8%B9%D8%AF%D8%A9">
+            Stomachache
+
+          </a>
+
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="Project-image">
+          <img src="https://i.pinimg.com/564x/07/3d/0d/073d0d110674be7c9e44120bcffde438.jpg" />
+        </div>
+        <div class="Project-info">
+          <a class="project-title"
+            href="https://altibbi.com/%D9%85%D8%B5%D8%B7%D9%84%D8%AD%D8%A7%D8%AA-%D8%B7%D8%A8%D9%8A%D8%A9/%D8%A7%D9%85%D8%B1%D8%A7%D8%B6-%D8%A7%D9%84%D8%AC%D9%87%D8%A7%D8%B2-%D8%A7%D9%84%D8%AA%D9%86%D9%81%D8%B3%D9%8A/%D8%A7%D9%85%D8%B1%D8%A7%D8%B6-%D8%A7%D9%84%D8%B1%D8%A6%D8%A9">
+            Lung Problem
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="cards contact" id="contact">
+    <h2 class="title">Contact Us</h2>
+
+    <div class="content">
+
+      <div class="card">
+
+        <div class="icon">
+          <i class="fas fa-phone"></i>
+
+        </div>
+        <div class="info">
+          <h3>Phone number</h3>
+          <p>0122200000</p>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon">
+          <i class="fas fa-envelope"></i>
+
+        </div>
+        <div class="info">
+          <h3>Mail</h3>
+          <p>Business@gmail.com</p>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+  </section>
+  <button id="go-to-top" class="goTopButton"><i class="fas fa-arrow-up"></i>
+  </button>
+  <footer class="footer"> </footer>
+
+  <script>
+    const goToTop = () => {
+      scrollTo({
+        top: 0,
+        behavior: "smooth"
+      })
+    }
+
+    const goToTopButton = document.getElementById("go-to-top");
+    goToTopButton.addEventListener("click", () => goToTop());
+
+    window.addEventListener("scroll", () => {
+      const scrollY = window.pageYOffset;
+      goToTopButton.style.display = scrollY > 600 ? "block" : "none";
+    })
+
+
+
+  </script>
+</body>
+
+</html>
